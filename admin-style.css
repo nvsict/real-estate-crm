@@ -1,0 +1,65 @@
+/* --- Dashboard KPI Cards --- */
+.c360-dashboard-wrap .c360-kpi-cards {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+.c360-kpi-card {
+    color: #fff !important;
+    padding: 30px 20px !important;
+    border-radius: 12px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;
+    text-align: center !important;
+}
+
+.c360-kpi-card h2 {
+    font-size: 36px !important;
+    margin: 0 0 10px !important;
+    color: #fff !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.c360-kpi-card p {
+    margin: 0 !important;
+    font-size: 16px !important;
+    opacity: 0.9 !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+.c360-kpi-card::after {
+    content: '';
+    position: absolute !important;
+    top: -20px !important;
+    right: -20px !important;
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    z-index: 1 !important;
+}
+
+/* Gradient backgrounds */
+.c360-kpi-card.card-leads { background: linear-gradient(45deg, #3B82F6, #60A5FA) !important; }
+.c360-kpi-card.card-contacts { background: linear-gradient(45deg, #8B5CF6, #A78BFA) !important; }
+.c360-kpi-card.card-properties { background: linear-gradient(45deg, #10B981, #34D399) !important; }
+.c360-kpi-card.card-tasks { background: linear-gradient(45deg, #F59E0B, #FBBF24) !important; }
+
+/* Responsive */
+@media (max-width: 960px) {
+    .c360-dashboard-wrap .c360-kpi-cards {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 15px !important;
+    }
+}
+@media (max-width: 600px) {
+    .c360-dashboard-wrap .c360-kpi-cards {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+}

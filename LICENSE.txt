@@ -1,0 +1,5 @@
+Proprietary License © 2025 Mohit Tarkar
+
+This software is the property of Mohit Tarkar.
+You may not copy, modify, distribute, sublicense, or sell this software
+without explicit written permission from the copyright holder.
